@@ -1,6 +1,8 @@
 <h2>Homework <%= @id %> </h2>
 <ul> <p class="msg"><%= @message %></p>
   
+  <a href="/list/edit/<%= @list.id %>">Edit this todo list</a>
+  
   <li>
     <input type="checkbox"></input>
     <span>"Complete all missed assignments - Physics"</span>
@@ -17,3 +19,4 @@
      <strong>3 pomodoros</strong>
   </li>
 </ul>
+<h3> my list is: <%= @list.name %> </h3>
